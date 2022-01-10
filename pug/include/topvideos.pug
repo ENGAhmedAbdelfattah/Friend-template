@@ -1,0 +1,20 @@
+section.top-videos(id="topvideos")
+  .container 
+    h2.main-h2 TOP VIDEOS
+    .box
+      .content 
+        .head
+          h3 Top Videos
+          i(class="fas fa-random")
+        .box-item
+          -var video_pra = ["Smile For See Me", "I Am The Friend", "Oh My Friend, My Life Companion", "Oh, You Are One Of Us", "Are you free", "Where Is The Friend", "Fragrant Friend"]
+          -var video_time = ["05:18", "03:18", "05:25", "04:16", "07:48", "03:12", "08:10"]
+          -var src_list = ["https://www.youtube.com/embed/jnQmPaSmUwE", "https://www.youtube.com/embed/uG9CTkCGHEg", "https://www.youtube.com/embed/2nvtCZ-qoMM", "https://www.youtube.com/embed/j1lr0At_ERw", "https://www.youtube.com/embed/WR66FJNdex8", "https://www.youtube.com/embed/6gPnXHMLSOE", "https://www.youtube.com/embed/v82g09o-cXw"]
+          ul
+            -for (var h = 0 ; h < video_pra.length ; h ++)
+              li.item(data-src= src_list[h])
+                p #{video_pra[h]}
+                time #{video_time[h]}
+      .video
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/jnQmPaSmUwE", title= "#{video_pra[0]}", picture-in-picture, allowfullscreen, enablejsapi=1)
+        p #{video_pra[0]}

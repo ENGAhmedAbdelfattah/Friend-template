@@ -1,1 +1,1 @@
-# Dedicated to my friend Ahmed Mandy
+# Creat code for the template three from zero

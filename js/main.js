@@ -114,5 +114,3 @@ newOpencontentEle.addEventListener("click", function (e) {
   contentEle.style.display = "block";
   boxEle.style.borderWidth = "1px";
 });
-
-console.log("aFA".padEnd);

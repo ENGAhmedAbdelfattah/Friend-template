@@ -61,10 +61,8 @@ let counter = setInterval(function () {
 
   let arr = [days, hours, minutes, secounds];
   for (let i = 0; i < countEles.length; i++) {
-    countEles[0].innerHTML =
-      Math.floor(arr[0]) < 100 ? `00${Math.floor(arr[0])}` : Math.floor(arr[0]);
-    countEles[i].innerHTML =
-      Math.floor(arr[i]) < 10 ? `0${Math.floor(arr[i])}` : Math.floor(arr[i]);
+    countEles[0].innerHTML = Math.floor(arr[0]).toString().padStart(3, 0);
+    countEles[i].innerHTML = Math.floor(arr[i]).toString().padStart(2, 0);
     if (countEles[i].innerHTML === 0) {
       clearInterval(counter);
     }
@@ -116,3 +114,5 @@ newOpencontentEle.addEventListener("click", function (e) {
   contentEle.style.display = "block";
   boxEle.style.borderWidth = "1px";
 });
+
+console.log("aFA".padEnd);

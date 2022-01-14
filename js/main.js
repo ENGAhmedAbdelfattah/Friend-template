@@ -106,11 +106,18 @@ videoItemEles.forEach(function (el) {
 closeContentEle.addEventListener("click", function () {
   contentEle.style.display = "none";
   newOpencontentEle.style.display = "flex";
+  if (window.innerWidth < 991) {
+    newOpencontentEle.style.transform = "rotate(90deg)";
+  }
+
   boxEle.prepend(newOpencontentEle);
   boxEle.style.borderWidth = "0";
 });
 newOpencontentEle.addEventListener("click", function (e) {
   newOpencontentEle.style.display = "none";
+  if (window.innerWidth < 991) {
+    newOpencontentEle.style.transform = "rotate(-90deg);";
+  }
   contentEle.style.display = "block";
   boxEle.style.borderWidth = "1px";
 });

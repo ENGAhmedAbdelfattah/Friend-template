@@ -2251,6 +2251,10 @@ section.top-videos .container .box .open {
   cursor: url(../cursor/button_down.cur);
 }
 
+.rotate {
+  transform: rotate(90deg);
+}
+
 /*
  *   Copyright (c) 2021 
  *   All rights reserved.

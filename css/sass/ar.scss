@@ -197,6 +197,19 @@ section.testimonials {
     }
   }
 }
+
+section.team-members {
+  .container {
+    .box {
+      .item {
+        .content {
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
 section.services {
   .container {
     .box {

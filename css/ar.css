@@ -390,6 +390,10 @@ section.testimonials .container .box .item6::before {
   left: 0;
 }
 
+section.team-members .container .box .item .content {
+  align-items: flex-start;
+}
+
 section.services .container .box .item .info {
   flex-direction: row-reverse;
 }

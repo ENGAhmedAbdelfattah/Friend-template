@@ -1,29 +1,28 @@
 header 
   .container 
     .logo
-      a(href="index.html") Ahmed Mahmoud
+      a(href="index.html") أحمد محمود
       div 🤝
-      a(href="index.html") Ahmed El-Mondy
-    -var listheader = ["عربي","articles", "gallery", "features", "other links"]
-    -var idlist0 = ["index_ar.html","#articles", "#gallery", "#features", "#otherlinks"]
+      a(href="index.html") أحمد المندي
+    -var listheader = ["English","مقالات", "الصور", "المستقبل", "روابط أخري"]
+    -var idlist0 = ["index.html","#articles", "#gallery", "#features", "#otherlinks"]
     ul
       each item,index in listheader
         if item != listheader[listheader.length - 1]
           li: a(href = "" + idlist0[index]) #{item}
         else
           li
-            a(href = "#" + idlist0[listheader.length - 1]) #{item}
+            a(href = "#" + idlist0[3]) #{item}
             ul.mega-menu
               img(src="image/megamenu.png" alt="megamenu")
               -var mega_icon1 = ["fas fa-comments","fas fa-user","far fa-building","far fa-check-circle"]
-              -var maga_menu1 = [ "THEY SAID ABOUT US", "OUR FRIENDS", "Services", "Our Skills"]
+              -var maga_menu1 = [ "قالوا عنا", "أصدقاءنا", "خدمات", "مهاراتنا"]
               -var id_List1 = ["testimonials","teammembers","services","our-skills"]
               ul
                 +icon-list(mega_icon1,maga_menu1,id_List1)
               -var mega_icon2 = ["far fa-calendar-alt","far fa-play-circle","fas fa-server","far fa-chart-bar"]
-              -var maga_menu2 = ["Events", "Top Videos", "Stats", "Contact With Us"]
+              -var maga_menu2 = ["مناسبات", "أفضل الفيديوهات", "احصائيات", "تواصل معنا"]
               -var id_List2 = ["events","topvideos","stats","discount"]
               ul
                 +icon-list(mega_icon2,maga_menu2,id_List2)
         -var z = z + 1
-  //- .lang ar

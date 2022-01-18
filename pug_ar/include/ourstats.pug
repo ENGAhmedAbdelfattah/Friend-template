@@ -1,0 +1,12 @@
+section.our-awesome-stats(id="stats")
+  .container 
+    h2 احصائياتنا الرائعة
+    .box
+      -var stats_icon = ["far fa-user", "fas fa-code", "fas fa-globe-asia", "far fa-money-bill-alt"]
+      -var stats_num = ["150", "135", "50", "5000"]
+      -var stats_span = ["الأصدقاء", "المشاريع", "البلدان", "المال مزيف"]
+      - for (g=0 ; g < stats_span.length ; g ++)
+        .item
+          i(class= stats_icon[g] + " "+ "fa-2x fa-fw" )
+          p(data-num = stats_num[g]) 0
+          span #{stats_span[g]}

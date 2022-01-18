@@ -1,0 +1,15 @@
+section.our-skills(id="our-skills")
+  .container 
+    h2.main-h2 مهاراتنا
+    .box
+      .image 
+        img(src="image/skills.png" alt="skills")
+      .content 
+        -var head_skills = ["HTML", "CSS", "جافا سكريبت", "بايثون"]
+        -var width_data = ["80%","85%","70%","80%"] 
+        - for (var q = 1 ; q <= head_skills.length; q++)
+          -var d = q - 1
+          div(class = "item" + q)
+            h3 #{head_skills[d]}
+            div(class="rang" )
+              div(class="rang-width" data-width= width_data[q - 1])
